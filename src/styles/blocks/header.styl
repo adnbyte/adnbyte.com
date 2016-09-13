@@ -30,11 +30,13 @@
 				height 0rem
 		.nav
 			height 4rem
+			&__list
+				top 4rem
 			&__item
 				font-size .65em
 			&__logo
 				img
-					height 3rem	
+					height 3rem
 .nav
 	text-transform: uppercase
 	display flex
@@ -66,3 +68,35 @@
 		img
 			height: 3.5rem
 			
+@media screen and (max-width: 1024px)
+	.nav
+		&__item
+			font-size: .7em
+			
+@media screen and (max-width: 768px)
+	.header
+		&__contact
+			&__content
+				justify-content space-between
+				&__number
+					display none
+					margin 0
+				&__mail
+					margin: 0
+	.nav
+		position: relative
+		&__list
+			padding: 1.4rem
+			margin: 0
+			background-color: $secundary
+			position: absolute
+			flex-direction column
+			top 5rem
+			width: 100%
+			left: 0
+			text-align: center
+			font-size: 1.5rem
+		&__item
+				padding: 1.4rem
+		&__logo
+			margin: 0
