@@ -1,0 +1,28 @@
+.slider
+	background: $secundary
+	height calc(100vh - 7.5rem)
+	position: relative
+	background-image: url("../assets/slide1.jpg")
+	background-size cover
+	background-position: 50% 50%
+	&__button
+		color $secundary
+		display inline-block
+		border 1px solid $secundary
+		position absolute
+		top calc(50% - 2rem)
+		font-size 1.5rem
+		height 4rem
+		width: 4rem
+		line-height: 6rem
+		transition all .15s linear
+		display flex
+		align-items center
+		justify-content center
+		&:hover
+			color white
+			background-color: $secundary
+	&__next
+		right 1rem
+	&__prev
+		left 1rem

@@ -1,0 +1,176 @@
+.services
+	height calc(100vh - 4rem)
+	display flex
+	flex-direction column
+	position: relative
+	&__anchor
+		position: absolute
+		top -4rem
+	&__title
+		text-align: center
+		text-transform: uppercase
+		font-size: 2.7rem
+		margin: 1rem
+		line-height: 3.5rem
+		letter-spacing 3px
+	&__collage
+		flex 1 0 0
+		display: flex
+		flex-direction column
+		&__row
+			flex 1 0 0
+			display flex
+			align-items stretch
+		&__info
+			box-sizing border-box
+			flex 2 0 0
+			&::before
+				content: ""
+				background-color white
+				color white
+				display: block
+				height 2px
+				width: 30%
+		&__1
+			flex 4 0 0
+			background-image: url("/assets/collage1.jpg")
+			background-size: cover
+			background-position: center
+			position relative
+			&>a
+				transition all .1s linear
+				background-color: rgba($primary_1,.7)
+				&::after
+					color white
+					content "apps"
+				&::before
+					color white
+					content "1"
+				&:hover
+					background-color: rgba($primary_1,.9)
+		&__2
+			background-color: #FFF
+			flex 2 0 0
+		&__3
+			background-color: #333
+			flex 2 0 0
+		&__4
+			background-color: #FFF
+			flex 3 0 0
+			position: relative
+			&>a
+				transition all .1s linear
+				background-color: rgba($primary_2, .7)
+				&::after
+					color white
+					content "web"
+				&::before
+					color white
+					content "2"
+				&:hover
+					background-color: rgba($primary_2, .9)
+		&__5
+			background-color: $secundary
+			flex 3 0 0
+			font-family: NexaLight
+			&>span
+				padding 0 3rem
+				margin-top 1rem
+				display block
+			&>a
+				margin-top 3rem
+				margin-left: 3rem
+		&__content
+			background-color: peru
+			position: absolute
+			top 1rem
+			bottom 1rem
+			left 1rem
+			right 1rem
+			&::after
+				display block
+				position absolute
+				bottom: 3.2rem
+				right 2rem
+				font-size: 2.6rem
+			&::before
+				display block
+				position absolute
+				bottom: 1rem
+				width 2rem
+				height 2rem
+				line-height 3rem
+				text-align: right
+				padding-top: .5rem
+				padding-right .5rem
+				font-size: 1rem
+				right 1rem
+				border-top 1px solid white
+				border-right 1px solid white
+		
+.apps
+	position relative
+	height: calc(100vh - 4rem)
+	&__anchor
+		position: absolute
+		top -4rem
+	&__call_to_action
+		display: flex
+		align-items center
+		justify-content center
+		height: 25vh
+		position absolute
+		bottom 0
+		right 0
+		left 0
+		background-color $secundary
+		&__select
+			text-transform: uppercase
+			font-size: 1rem
+			font-weight: 200
+			letter-spacing 4px
+			margin-right: 2rem
+		&__platform
+			display flex
+			justify-content space-between
+			align-items center
+			a
+				margin-right: 1rem
+	&__description
+		width: 30%
+		position relative
+		left 70%
+		font-weight: 200
+		a
+			color white
+		a::after
+			font-family: FontAwesome
+			content "\f0a9"
+			margin: 8px
+			font-size: 2rem
+			color $primary_1
+.webs
+	position: relative
+	height calc(100vh - 4rem)
+	&__anchor
+		position: absolute
+		top -4rem
+	&__description
+		width: 30%
+		a
+			color white
+		a::after
+			font-family: FontAwesome
+			content "\f0a9"
+			margin: 8px
+			font-size: 2rem
+			color $primary_2
+	&::before
+		content ""
+		position: absolute
+		display block
+		background-color: white
+		bottom: 0
+		right: 0
+		left: 0
+		height: 25vh

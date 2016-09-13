@@ -1,0 +1,122 @@
+.button
+	text-transform: uppercase
+	border: 1px solid white
+	font-family: NexaLight
+	display inline-block
+	width: 12rem
+	height: 2rem
+	text-align: center
+	display flex
+	align-items center
+	justify-content center
+	color white
+	transition all .1s linear
+	&>span
+		margin: 0
+	&:hover
+		background-color: white
+		color $secundary
+	&--android
+		width: 18rem
+		height: auto
+		font-size: 1.3rem
+		border-color black
+		color black
+		&:hover
+			background-color: #A4C639
+			color white
+			border-color: #A4C639
+	&__download
+		font-size: .8rem
+		display: block
+		padding-left: .7rem
+	&--ios
+		width: 18rem
+		height: auto
+		font-size: 1.3rem
+		border-color black
+		color black
+		background-color: none
+		&:hover
+			color white
+			background: black
+	i
+		margin 1rem
+		
+.social
+	&__item
+		display inline-block
+		text-align center
+		vertical-align center
+		width 1.8em
+		height 1.8em
+		line-height: 2em
+		background-color gray
+		color black
+		border-radius: 3px
+		margin-right 5px
+		&:hover
+			background linear-gradient(to right,  $primary_1 0%, $primary_2 100%)
+			background-size: 200% 200%;
+			animation: linkHover 1s ease infinite;
+		
+@keyframes linkHover { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.map
+	position: relative
+	height: 15rem
+	filter: grayscale(100%)
+	&:before
+		content "Click para navegar"
+		text-shadow: 1px 1px white
+		color black
+		display block
+		position: absolute
+		text-align: center
+		padding-top 3rem
+		width: 100%
+		height: 100%
+	&--hidden:before
+		display none
+		background-color: #FFF
+.parallax
+	&__img
+		width: 100%
+		height: 20rem
+		background-image: url(/assets/collage1.jpg)
+		background-size: cover
+		background-position: center
+		background-attachment: fixed;
+.section
+	padding 2rem $padding_section
+	box-sizing: border-box
+	&--style_1
+		background: linear-gradient(to right,  $primary_1 0%, $primary_2 100%)
+	&--style_2
+		background: rgba(white, .07)
+	h3
+		text-transform: lowercase
+		font-size: 2.5rem
+		line-height 3rem
+		position relative
+		margin: .5rem 0
+		i
+			font-size: 4rem
+			width: 3rem
+			text-align: center
+			position absolute
+			left -6rem
+			top 0rem
+	h4
+		font-family: NexaLight
+		font-weight: 200
+	p
+		font-family: NexaLight
+		font-size: .75em
+		line-height 1.3rem
+		font-weight: 100
+		

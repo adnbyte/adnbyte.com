@@ -1,0 +1,68 @@
+.header
+	position fixed
+	top 0 
+	right 0
+	left 0
+	z-index 10
+	*
+		transition all .1s linear
+	&__contact
+		font-size .8em
+		padding-right $padding_section
+		padding-left $padding_section
+		background-color black
+		color $text_dark
+		overflow: hidden
+		height 2.5rem
+		&__content
+			height: 2.5rem
+			display flex
+			align-items center
+			i
+				padding 3px
+			&__number
+				margin-right 4rem
+			&__mail
+				margin-right 4rem
+	&--small
+		.header
+			&__contact
+				height 0rem
+		.nav
+			height 4rem
+			&__item
+				font-size .65em
+			&__logo
+				img
+					height 3rem	
+.nav
+	text-transform: uppercase
+	display flex
+	padding-right $padding_section
+	padding-left $padding_section
+	display flex
+	align-items center
+	justify-content space-between
+	height 5rem
+	&__list
+		display flex
+		list-style-type: none
+		&--footer
+			flex-direction column
+			margin: 0
+			li
+				margin: 5px 0
+				a
+					color #333
+	&__item
+		letter-spacing 1px
+		font-size .88em
+		a
+			color white
+			padding 1rem
+	&__logo
+		line-height: 0
+		margin 0 3rem
+		img
+			height: 3.5rem
+			
