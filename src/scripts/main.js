@@ -20,3 +20,7 @@ $('a').click(function() {
     }, 500);
     return false;
 });
+
+$('.map').click(function () {
+    $(this).addClass('map--hidden')
+})
