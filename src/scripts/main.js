@@ -24,3 +24,13 @@ $('a').click(function() {
 $('.map').click(function () {
     $(this).addClass('map--hidden')
 })
+
+var menu = $('#menu')
+
+menu.click(function() {
+    $('.nav__list').toggleClass('nav__list--show')
+})
+
+$('.nav__list *').click(function() {
+    $('.nav__list').toggleClass('nav__list--show')
+})
