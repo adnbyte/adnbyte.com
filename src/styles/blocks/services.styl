@@ -24,6 +24,8 @@
 		&__info
 			box-sizing border-box
 			flex 2 0 0
+			p
+				margin-right 20px
 			&::before
 				content: ""
 				background-color white
@@ -50,12 +52,18 @@
 					background-color: rgba($primary_1,.9)
 		&__2
 			background-color: #FFF
+			background-image: url('/assets/collage3.jpg')
+			background-size: cover
+			background-position: center
 			flex 2 0 0
 		&__3
 			background-color: #333
 			flex 2 0 0
 		&__4
 			background-color: #FFF
+			background-image: url('/assets/collage2.jpg')
+			background-size: cover
+			background-position: center
 			flex 3 0 0
 			position: relative
 			&>a
@@ -118,7 +126,7 @@
 		display: flex
 		align-items center
 		justify-content center
-		height: 25vh
+		height: 17vh
 		position absolute
 		padding 0 2rem
 		bottom 0
@@ -192,6 +200,7 @@
 			width: 50%
 		&__call_to_action
 			&__select
+				display: none
 				font-size 1rem
 				margin-right: 1rem
 			&__platform

@@ -33,7 +33,7 @@
 			&__list
 				top 4rem
 			&__item
-				font-size .65em
+				font-size .88em
 			&__logo
 				img
 					height 3rem
@@ -87,6 +87,20 @@
 					margin 0
 				&__mail
 					margin: 0
+		&--small
+			.header
+				&__contact
+					height 0rem
+			.nav
+				height 5rem
+				&__list
+					top 5rem
+				&__item
+					font-size .7em
+				&__logo
+					img
+						height 3.5rem
+
 	.nav
 		position: relative
 		padding 0 5vh
@@ -112,5 +126,12 @@
 		&__logo
 			margin: 0
 		i
-			display block
+			display flex
+			align-items center
+			justify-content center
 			font-size 2rem
+			color $secundary
+			width: 3rem
+			height: 3rem
+			border: 3px solid $secundary
+			border-radius: 50%
