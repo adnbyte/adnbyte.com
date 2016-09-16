@@ -195,10 +195,13 @@
 			font-size: 2.4rem
 
 	.apps
+		height auto
+		padding-bottom 10rem
 		&__description
 			left: 50%
 			width: 50%
 		&__call_to_action
+			height 10rem
 			&__select
 				display: none
 				font-size 1rem
@@ -207,15 +210,22 @@
 				flex-direction row       
 				justify-content space-between
 	.webs
+		height auto
+		padding-bottom 10rem
 		&__description
 			width: 50%
+		&::before
+			height 10rem
 			
 @media screen and (max-width: 768px)
 	.services
 		height: auto
 		min-height: 40rem
+		&__anchor
+			top -5rem
 		&__title
-			font-size: 2rem
+			display none
+			font-size: 1.5rem
 			line-height: 2.1rem
 		&__collage
 			flex 0 0 auto
@@ -223,11 +233,12 @@
 				flex-direction column
 				flex 0 0 auto
 			&__info
+				flex: 0 0 auto
 				text-align: center
+				padding 1rem 0
 				&::before
 					width: 15%
 					margin-left: 35%
-					
 			&__1
 				flex: 0 0 20rem
 			&__2
@@ -238,13 +249,31 @@
 				flex: 0 0 20rem
 				order 2
 			&__5
+				display flex
+				align-items center
+				justify-content space-around
+				flex-direction column
 				flex: 0 0 15rem
+				padding 2rem 0
+				box-sizing border-box
 				order 1
+				&::before
+					content "\f0ab"
+					display block
+					font-size 4rem
+					color $primary_2
+					font-family FontAwesome
+				a
+					padding 0
+					margin 0
 	.apps
+		&__anchor
+			top -5rem
 		&__description
 			left: 0%
 			width: 100%
 		&__call_to_action
+			height 10rem
 			&__platform
 				height: 100%
 				flex-direction column   
@@ -253,5 +282,7 @@
 					margin: 10px
 			
 	.webs
+		&__anchor
+			top -5rem
 		&__description
 			width: 100%

@@ -11,7 +11,7 @@
 		font-size: 4rem
 		color black
 		margin: 2rem 0
-	input
+	input, textarea
 		background: none
 		color #000
 		padding 1.7rem 1rem
@@ -23,7 +23,8 @@
 		&:focus
 			outline none
 			box-shadow 1px 1px 4px black
-			
+	textarea
+		width: 100%
 	input[type="submit"]
 		padding: 1.4rem 3rem
 		background-color: $primary_2
@@ -75,6 +76,7 @@
 	
 @media screen and (max-width: 768px)
 	.call_to_action
+		height 30rem
 		&__slogan
 			
 			text-align: center
@@ -82,3 +84,15 @@
 			line-height: 4rem
 		div
 			align-self center
+	
+	.contacto
+		height auto
+		span
+			padding 0
+			margin: 0
+			display block
+		&>form>div
+			flex-direction column
+			padding 0 2rem
+			input
+				margin: .5rem 0
